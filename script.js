@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Event listeners
     setupEventListeners();
     
-    // Animații la scroll
-    setupScrollAnimations();
+    // Animații la scroll - dezactivate pentru a evita problemele de încărcare
+    // setupScrollAnimations();
 });
 
 function initializeApp() {
@@ -478,7 +478,7 @@ function setupScrollAnimations() {
     }, observerOptions);
     
     // Observă elementele pentru animații
-    const animatedElements = document.querySelectorAll('.app-details, .similar-apps, .screenshot, .review, .app-card');
+    const animatedElements = document.querySelectorAll('.app-details, .similar-apps, .screenshot, .review, .app-card, .bibliography-section, .developer-section');
     animatedElements.forEach(el => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';
