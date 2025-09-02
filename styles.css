@@ -132,8 +132,8 @@ body {
 .main-content {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 20px; /* Redus padding-ul vertical de la 32px la 20px */
-    padding-top: 80px; /* Redus padding-top pentru a aduce conținutul mai sus */
+    padding: 32px 20px; /* Restaurat padding-ul original */
+    padding-top: 100px; /* Restaurat padding-top original */
 }
 
 /* Breadcrumb */
@@ -170,7 +170,7 @@ body {
 
 .app-header {
     display: flex;
-    padding: 20px 32px; /* Redus padding-ul vertical de la 32px la 20px */
+    padding: 32px; /* Restaurat padding-ul original */
     gap: 24px;
     border-bottom: 1px solid var(--border-color);
 }
@@ -189,14 +189,14 @@ body {
 .app-title {
     font-size: 32px;
     font-weight: 700;
-    margin-bottom: 4px; /* Redus de la 8px */
+    margin-bottom: 8px; /* Restaurat original */
     color: var(--text-primary);
 }
 
 .app-developer {
     font-size: 16px;
     color: var(--text-secondary);
-    margin-bottom: 8px; /* Redus de la 16px */
+    margin-bottom: 16px; /* Restaurat original */
 }
 
 .app-category {
@@ -206,14 +206,14 @@ body {
     padding: 6px 12px;
     border-radius: 16px;
     font-size: 14px;
-    margin-bottom: 8px; /* Redus de la 16px */
+    margin-bottom: 16px; /* Restaurat original */
 }
 
 /* Statistici în timp real */
 .app-stats {
     display: flex;
     gap: 24px;
-    margin-bottom: 12px; /* Redus de la 20px */
+    margin-bottom: 20px; /* Restaurat original */
     flex-wrap: wrap;
 }
 
@@ -687,15 +687,15 @@ body {
 
 @media (max-width: 768px) {
     .main-content {
-        padding: 16px 20px; /* Redus padding-ul */
-        padding-top: 70px; /* Padding mai mic pentru mobile */
+        padding: 24px 20px; /* Restaurat original */
+        padding-top: 80px; /* Restaurat original */
     }
 }
 
 @media (max-width: 480px) {
     .main-content {
-        padding: 12px 16px; /* Redus padding-ul */
-        padding-top: 60px; /* Padding și mai mic pentru mobile mic */
+        padding: 16px; /* Restaurat original */
+        padding-top: 70px; /* Restaurat original */
     }
     
     .app-header,
@@ -751,10 +751,7 @@ body {
     }
 }
 
-.app-details,
-.similar-apps {
-    animation: fadeIn 0.6s ease-out;
-}
+
 
 /* Hover effects pentru butoane */
 .btn-install:active,
